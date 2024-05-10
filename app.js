@@ -9,7 +9,7 @@ const n4 = 5;
 // arithmetic operators and a comparison.
 const isSum50 = (n1 + n2 + n3 + n4) == 50;
 //log results
-console.log(isSum50);
+console.log(`do the numbers add up to 25? ${isSum50}`);
 
 // Check two: at least two odd numbers
 // Here, we use modulus to check if something is odd.
@@ -17,14 +17,14 @@ console.log(isSum50);
 // arithmetic to count the total number of odd numbers.
 const isTwoOdd = (n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2;
 //log results
-console.log(isTwoOdd);
+console.log(`are there at least two odd numbers? : ${isTwoOdd}`);
 
 // Check three: no number larger than 25
 // This time, we use the OR operator to check
 // if ANY of the numbers is larger than 25.
 const isOver25 = n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25;
 //log results
-console.log(isOver25);
+console.log(`are any numbers larger than 25? : ${isOver25}`);
 
 // Check four: all unique numbers
 // This is long, and there are more efficient
@@ -32,7 +32,7 @@ console.log(isOver25);
 // that we will review later.
 const isUnique = n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4;
 //log results
-console.log(isUnique);
+console.log(`are all the numbers unique? : ${isUnique}`);
 
 // Here, we put the results into a single variable 
 // for convenience. Note how we negate isOver25 using
@@ -40,23 +40,23 @@ console.log(isUnique);
 // "isUnder25" as an alternative.
 const isValid = isSum50 && isTwoOdd && !isOver25 && isUnique;
 // Lets log the results.
-console.log(isValid);
+console.log(`combining the reults into a single variable : ${isValid}`);
 
 // Are the number divisible by 5?
 const isDivisible = (n1 % 5) && (n2 % 5) && (n3 % 5) && (n4 % 5);
 //log results
-console.log(isDivisible);
+console.log(`are the numbers divisible by 5? : ${isDivisible}`);
 
 // Is the first number larger than the last?
 const isLarger = n1 < n4
 //log results
-console.log(isLarger);
+console.log(`is the first number larger than the last? : ${isLarger}`);
 
 //Accomplish the following arithmetic chain:
 /**Subtract the first number from the second number.
 Multiply the result by the third number.*/
 const chain = (n2 - n1) * n3
-console.log(chain)
+console.log(`the first number subtracted from the second number then multiplied by the third number : ${chain}`);
 //find the remainder of dividing the result by the fourth number.
 const remainder = chain / n4
 console.log(`the remainder of dividing the result by the fourth number is : ${remainder}`); 
