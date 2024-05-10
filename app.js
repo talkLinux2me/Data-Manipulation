@@ -59,7 +59,10 @@ const chain = (n2 - n1) * n3
 console.log(chain)
 //find the remainder of dividing the result by the fourth number.
 const remainder = chain / n4
-console.log(remainder) 
+console.log(`the remainder of dividing the result by the fourth number is : ${remainder}`); 
 //Change the way that isOver25 
 //calculates so that we do not need to use the NOT operator (!) in other logic comparisons. 
 //Rename the variable as appropriate.
+const under25 = n1 < 25 && n2 < 25 && n3 < 25 && n4 < 25;
+//log results
+console.log(`these numbers are under 25 : ${under25}`);
