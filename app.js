@@ -52,3 +52,14 @@ const isLarger = n1 < n4
 //log results
 console.log(isLarger);
 
+//Accomplish the following arithmetic chain:
+/**Subtract the first number from the second number.
+Multiply the result by the third number.*/
+const chain = (n2 - n1) * n3
+console.log(chain)
+//find the remainder of dividing the result by the fourth number.
+const remainder = chain / n4
+console.log(remainder) 
+//Change the way that isOver25 
+//calculates so that we do not need to use the NOT operator (!) in other logic comparisons. 
+//Rename the variable as appropriate.
