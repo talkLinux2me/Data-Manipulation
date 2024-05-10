@@ -72,9 +72,15 @@ console.log(`these numbers are under 25 : ${under25}`);
 Lets set parameters.
 */
 const miles = 1500;
-const 55MPH = 30;
-const 60MPH = 28;
-const 75MPH = 23
+const fiftyFiveMPH = 55/30;
+const sixtyMPH = 60/28;
+const seventyFiveMPH = 75/23;
 const fuelBudget = 175;
 const gallonFuel = 3
 
+//How many gallons of fuel will you need for the entire trip?
+//const tripFuel = gallonFuel * miles
+//console.log(`gallons of fuel for the trip : ${tripFuel}`);
+
+//How many gallons of fuel will you need for the entire trip?
+const 
