@@ -96,8 +96,16 @@ console.log (`It will take ${tripThree} hours to travel at 75 miles per hour`);
 //How many gallons of fuel will you need for the entire trip?
 const fuelGallonA = option1 * tripOne
 console.log(`it will take ${fuelGallonA} gallons of fuel at 55 MPH`);
-
-
+const fuelGallonB = option2 * tripTwo
+console.log(`it will take ${fuelGallonB} gallons of fuel at 60 MPH`);
+const fuelGallonC = option3 * tripThree
+console.log(`it will take ${fuelGallonC} gallons of fuel at 75 MPH`);
 
 //Will your budget be enough to cover the fuel expense?
+let fuel = fuelBudget/gallonFuel
 
+const budgetVSfuel=(fuel,fuelG)=> fuel >= fuelG
+
+console.log(budgetVSfuel(fuel, fuelGallonA))
+console.log(budgetVSfuel(fuel, fuelGallonB))
+console.log(budgetVSfuel(fuel, fuelGallonC))
